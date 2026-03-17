@@ -1,6 +1,4 @@
-# [Embedded Linux] Blink LED & Buildroot Integration on BeagleBone Black
-
-Báo cáo thực hành: Điều khiển GPIO qua Sysfs, lập trình C và đóng gói Package tùy chỉnh vào hệ điều hành Linux (Buildroot).
+# Báo cáo BT06: Điều khiển GPIO qua Sysfs, lập trình C và đóng gói Package tùy chỉnh vào hệ điều hành Linux (Buildroot).
 
 ---
 
