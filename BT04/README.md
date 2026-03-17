@@ -66,3 +66,4 @@ Truy cập terminal của BBB và chạy thử chương trình:
 ```bash
 ./helloworld
 ```
+![BT04](https://github.com/user-attachments/assets/d1ba42c9-999e-42ca-b78e-b16a09da04df)
