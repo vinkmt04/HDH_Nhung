@@ -1,4 +1,4 @@
-# Báo cáo BT06-ApplicationApplication: Quá trình điều khiển GPIO qua Sysfs, lập trình C và đóng gói Package tùy chỉnh vào hệ điều hành Linux sử dụng Buildroot.
+# Báo cáo BT06-Application: Quá trình điều khiển GPIO qua Sysfs, lập trình C và đóng gói Package tùy chỉnh vào hệ điều hành Linux sử dụng Buildroot.
 
 ---
 
