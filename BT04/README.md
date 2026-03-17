@@ -39,31 +39,23 @@ Sau khi build xong, Image và Toolchain sẽ nằm trong thư mục `output/imag
 **Mục tiêu:** Dùng Toolchain vừa tạo để biên dịch chương trình C/C++ trên PC và chạy thử trên BBB.
 
 ### 1. Viết chương trình Hello World
-Tạo file `helloworld.c` trên máy tính:
-```c
-#include <stdio.h>
-
-int main() {
-    printf("Hello World! Chuong trinh bien dich bang Buildroot Toolchain.\n");
-    return 0;
-}
-```
+Tạo file `test.c` trên máy tính:
 
 ### 2. Biên dịch chéo trên PC
 Dùng Toolchain của Buildroot để biên dịch file C thành file thực thi cho kiến trúc ARM:
 ```bash
-./output/host/bin/arm-buildroot-linux-gnueabihf-gcc helloworld.c -o helloworld
+./output/host/bin/arm-buildroot-linux-gnueabihf-gcc test.c -o test_kmt
 ```
 
 ### 3. Đưa chương trình xuống BBB
 Copy file thực thi vào thẻ nhớ hoặc gửi qua SSH/SCP (nếu BBB đã kết nối mạng):
 ```bash
-scp helloworld root@<địa_chỉ_IP_của_BBB>:/root/
+scp test_kmt root@<địa_chỉ_IP_của_BBB>:/root/
 ```
 
 ### 4. Khởi chạy trên BBB
 Truy cập terminal của BBB và chạy thử chương trình:
 ```bash
-./helloworld
+./test_kmt
 ```
 ![BT04](https://github.com/user-attachments/assets/d1ba42c9-999e-42ca-b78e-b16a09da04df)
