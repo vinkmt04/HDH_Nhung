@@ -9,7 +9,11 @@ Trên BeagleBone Black (BBB), mỗi chân vật lý sẽ được hệ điều h
 * **Mount Debugfs:** `mount -t debugfs debugfs /sys/kernel/debug/`
 * **Xem danh sách GPIO:** `cat /sys/kernel/debug/gpio`
 
+<img width="794" height="285" alt="image" src="https://github.com/user-attachments/assets/60fa388d-547b-45c8-849a-d04f4d7fc857" />
+
 **Kết quả:** Dựa vào log debug, chân **P9_12** hiện tại đang được kernel ánh xạ tới node **gpio-540** (thuộc `gpiochip0` quản lý dải từ 512-543).
+
+<img width="375" height="49" alt="image" src="https://github.com/user-attachments/assets/312d3421-ef0e-4807-9d6c-4783cb107a81" />
 
 ### 1.2. Quá trình giao tiếp qua Sysfs
 1. **Kích hoạt chân (Export):** `echo 540 > /sys/class/gpio/export`
@@ -20,6 +24,10 @@ Trên BeagleBone Black (BBB), mỗi chân vật lý sẽ được hệ điều h
    * `echo 1 > /sys/class/gpio/gpio540/value` (Xuất mức High - 3.3V để Bật LED)
    * `echo 0 > /sys/class/gpio/gpio540/value` (Xuất mức Low - 0V để Tắt LED)
 4. **Kiểm tra trạng thái:** `cat /sys/class/gpio/gpio540/value`
+
+<img width="532" height="161" alt="image" src="https://github.com/user-attachments/assets/877b02c1-7af3-4507-ac5c-96581147ba47" />
+
+<img width="544" height="966" alt="image" src="https://github.com/user-attachments/assets/d229ee91-9122-40f6-8073-59a9213241e0" />
 
 ---
 
