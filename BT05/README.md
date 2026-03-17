@@ -50,6 +50,7 @@ Chạy file trên BBB bằng lệnh:
 ```bash
 ./HelloJSON
 ```
+<img width="648" height="188" alt="bai1" src="https://github.com/user-attachments/assets/178e0e8a-407c-4fb8-8b7e-fb353dcc83cb" />
 
 ---
 
@@ -127,6 +128,7 @@ scp libkmt.so root@192.168.10.109:/usr/lib/
 ```bash
 ./output/host/bin/arm-buildroot-linux-gnueabihf-readelf -d app_dynamic | grep NEEDED
 ```
+<img width="999" height="111" alt="bai2" src="https://github.com/user-attachments/assets/109b07a7-9da6-41be-aedd-405d8d4dddc4" />
 
 ---
 
@@ -273,6 +275,8 @@ Sau khi nạp Image mới vào thẻ nhớ và khởi động BBB, gõ lệnh:
 combined_app
 ```
 Hệ thống sẽ tự chạy mà không cần ông phải copy file `.so` hay export đường dẫn thủ công nữa, vì Buildroot đã cài đặt mọi thứ vào đúng vị trí hệ thống (`/usr/bin` và `/usr/lib`).
+
+<img width="624" height="115" alt="bai3" src="https://github.com/user-attachments/assets/7bd6df4d-3a19-4648-bb88-61a3712901f8" />
 
 ---
 
