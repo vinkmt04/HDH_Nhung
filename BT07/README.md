@@ -1,7 +1,5 @@
 # BT07: Viết Character Device Driver cho BeagleBone Black (Buildroot)
 
-Tài liệu này tổng hợp chi tiết quá trình từ viết code, biên dịch chéo đến triển khai thực tế Driver đếm số (counter) trên môi trường Buildroot.
-
 ---
 
 ## 1. Mã nguồn Driver (my_driver.c)
